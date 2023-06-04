@@ -1,6 +1,6 @@
 ﻿namespace rtipo
 {
-    partial class menu_form
+    partial class StartMenuForm
     {
         /// <summary>
         /// Required designer variable.

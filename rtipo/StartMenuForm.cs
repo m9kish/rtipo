@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace rtipo
 {
-    public partial class EditRecord : Form
+    public partial class StartMenuForm : Form
     {
-        public EditRecord()
+        public StartMenuForm()
         {
             InitializeComponent();
         }

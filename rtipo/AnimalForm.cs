@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace rtipo
 {
-    public partial class auth_form : Form
+    public partial class AnimalForm : Form
     {
-        public auth_form()
+        public AnimalForm()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace rtipo
 {
-    public partial class menu_form : Form
+    public partial class AuthForm : Form
     {
-        public menu_form()
+        public AuthForm()
         {
             InitializeComponent();
         }

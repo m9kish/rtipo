@@ -1,6 +1,6 @@
 ﻿namespace rtipo
 {
-    partial class auth_form
+    partial class AuthForm
     {
         /// <summary>
         /// Required designer variable.
