@@ -30,42 +30,68 @@
         {
             textBox_login = new TextBox();
             textBox_password = new TextBox();
-            button1 = new Button();
+            button_auth = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // textBox_login
             // 
-            textBox_login.Location = new Point(123, 65);
+            textBox_login.Location = new Point(63, 14);
             textBox_login.Name = "textBox_login";
             textBox_login.Size = new Size(214, 23);
             textBox_login.TabIndex = 0;
             // 
             // textBox_password
             // 
-            textBox_password.Location = new Point(123, 105);
+            textBox_password.Location = new Point(63, 54);
             textBox_password.Name = "textBox_password";
+            textBox_password.PasswordChar = '*';
             textBox_password.Size = new Size(214, 23);
             textBox_password.TabIndex = 1;
             // 
-            // button1
+            // button_auth
             // 
-            button1.Location = new Point(182, 134);
-            button1.Name = "button1";
-            button1.Size = new Size(103, 43);
-            button1.TabIndex = 2;
-            button1.Text = "Вход";
-            button1.UseVisualStyleBackColor = true;
+            button_auth.BackColor = SystemColors.Info;
+            button_auth.Location = new Point(99, 90);
+            button_auth.Name = "button_auth";
+            button_auth.Size = new Size(103, 43);
+            button_auth.TabIndex = 2;
+            button_auth.Text = "Вход";
+            button_auth.UseVisualStyleBackColor = false;
+            button_auth.Click += button_auth_Click;
             // 
-            // auth_form
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(16, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 15);
+            label1.TabIndex = 3;
+            label1.Text = "Логин";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(8, 57);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 15);
+            label2.TabIndex = 4;
+            label2.Text = "Пароль";
+            // 
+            // AuthForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(469, 263);
-            Controls.Add(button1);
+            ClientSize = new Size(300, 145);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(button_auth);
             Controls.Add(textBox_password);
             Controls.Add(textBox_login);
-            Name = "auth_form";
-            Text = "auth_form";
+            Name = "AuthForm";
+            Text = "Авторизация";
+            FormClosed += AuthForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -74,6 +100,8 @@
 
         private TextBox textBox_login;
         private TextBox textBox_password;
-        private Button button1;
+        private Button button_auth;
+        private Label label1;
+        private Label label2;
     }
 }

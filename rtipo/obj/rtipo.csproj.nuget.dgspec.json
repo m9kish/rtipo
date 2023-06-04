@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\speco\\RiderProjects\\rtipo\\rtipo\\rtipo.csproj": {}
+    "C:\\Users\\tvo20\\source\\repos\\rtipo\\rtipo\\rtipo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\speco\\RiderProjects\\rtipo\\rtipo\\rtipo.csproj": {
+    "C:\\Users\\tvo20\\source\\repos\\rtipo\\rtipo\\rtipo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\speco\\RiderProjects\\rtipo\\rtipo\\rtipo.csproj",
+        "projectUniqueName": "C:\\Users\\tvo20\\source\\repos\\rtipo\\rtipo\\rtipo.csproj",
         "projectName": "rtipo",
-        "projectPath": "C:\\Users\\speco\\RiderProjects\\rtipo\\rtipo\\rtipo.csproj",
-        "packagesPath": "C:\\Users\\speco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\speco\\RiderProjects\\rtipo\\rtipo\\obj\\",
+        "projectPath": "C:\\Users\\tvo20\\source\\repos\\rtipo\\rtipo\\rtipo.csproj",
+        "packagesPath": "C:\\Users\\tvo20\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tvo20\\source\\repos\\rtipo\\rtipo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\speco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tvo20\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

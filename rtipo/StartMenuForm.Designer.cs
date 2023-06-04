@@ -28,67 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            to_animals_button = new Button();
+            to_organisations_button = new Button();
+            to_contracts_button = new Button();
+            to_statistics_button = new Button();
             SuspendLayout();
             // 
-            // button1
+            // to_animals_button
             // 
-            button1.Location = new Point(50, 48);
-            button1.Name = "button1";
-            button1.Size = new Size(88, 48);
-            button1.TabIndex = 0;
-            button1.Text = "Реестр животных";
-            button1.UseVisualStyleBackColor = true;
+            to_animals_button.Location = new Point(12, 12);
+            to_animals_button.Name = "to_animals_button";
+            to_animals_button.Size = new Size(88, 48);
+            to_animals_button.TabIndex = 0;
+            to_animals_button.Text = "Реестр животных";
+            to_animals_button.UseVisualStyleBackColor = true;
+            to_animals_button.Click += to_animals_button_Click;
             // 
-            // button2
+            // to_organisations_button
             // 
-            button2.Location = new Point(144, 48);
-            button2.Name = "button2";
-            button2.Size = new Size(88, 47);
-            button2.TabIndex = 1;
-            button2.Text = "Реестр организаций";
-            button2.UseVisualStyleBackColor = true;
+            to_organisations_button.Location = new Point(106, 12);
+            to_organisations_button.Name = "to_organisations_button";
+            to_organisations_button.Size = new Size(88, 47);
+            to_organisations_button.TabIndex = 1;
+            to_organisations_button.Text = "Реестр организаций";
+            to_organisations_button.UseVisualStyleBackColor = true;
+            to_organisations_button.Click += to_organisations_button_Click;
             // 
-            // button3
+            // to_contracts_button
             // 
-            button3.Location = new Point(235, 48);
-            button3.Name = "button3";
-            button3.Size = new Size(88, 45);
-            button3.TabIndex = 2;
-            button3.Text = "Реестр контрактов";
-            button3.UseVisualStyleBackColor = true;
+            to_contracts_button.Location = new Point(197, 12);
+            to_contracts_button.Name = "to_contracts_button";
+            to_contracts_button.Size = new Size(88, 45);
+            to_contracts_button.TabIndex = 2;
+            to_contracts_button.Text = "Реестр контрактов";
+            to_contracts_button.UseVisualStyleBackColor = true;
+            to_contracts_button.Click += to_contracts_button_Click;
             // 
-            // button4
+            // to_statistics_button
             // 
-            button4.Location = new Point(329, 49);
-            button4.Name = "button4";
-            button4.Size = new Size(88, 47);
-            button4.TabIndex = 3;
-            button4.Text = "Статистика";
-            button4.UseVisualStyleBackColor = true;
+            to_statistics_button.Location = new Point(291, 13);
+            to_statistics_button.Name = "to_statistics_button";
+            to_statistics_button.Size = new Size(88, 47);
+            to_statistics_button.TabIndex = 3;
+            to_statistics_button.Text = "Статистика";
+            to_statistics_button.UseVisualStyleBackColor = true;
+            to_statistics_button.Click += to_statistics_button_Click;
             // 
-            // menu_form
+            // StartMenuForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(475, 147);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Name = "menu_form";
-            Text = "menu_form";
+            ClientSize = new Size(390, 74);
+            Controls.Add(to_statistics_button);
+            Controls.Add(to_contracts_button);
+            Controls.Add(to_organisations_button);
+            Controls.Add(to_animals_button);
+            Name = "StartMenuForm";
+            Text = "Стартовое меню";
+            FormClosed += StartMenuForm_FormClosed;
+            Load += StartMenuForm_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button to_animals_button;
+        private Button to_organisations_button;
+        private Button to_contracts_button;
+        private Button to_statistics_button;
     }
 }

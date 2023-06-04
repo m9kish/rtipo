@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\speco\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\speco\\.nuget\\packages"
+      "C:\\Users\\tvo20\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\tvo20\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

@@ -34,9 +34,10 @@
             животныеToolStripMenuItem = new ToolStripMenuItem();
             организацииToolStripMenuItem = new ToolStripMenuItem();
             контрактыToolStripMenuItem = new ToolStripMenuItem();
-            button1 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            add_button = new Button();
+            delete_button = new Button();
+            export_button = new Button();
+            saveFileDialog1 = new SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -86,47 +87,49 @@
             контрактыToolStripMenuItem.Size = new Size(147, 22);
             контрактыToolStripMenuItem.Text = "Контракты";
             // 
-            // button1
+            // add_button
             // 
-            button1.Location = new Point(849, 27);
-            button1.Name = "button1";
-            button1.Size = new Size(104, 38);
-            button1.TabIndex = 2;
-            button1.Text = "Добавить";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            add_button.Location = new Point(849, 27);
+            add_button.Name = "add_button";
+            add_button.Size = new Size(104, 38);
+            add_button.TabIndex = 2;
+            add_button.Text = "Добавить";
+            add_button.UseVisualStyleBackColor = true;
+            add_button.Click += add_button_Click;
             // 
-            // button3
+            // delete_button
             // 
-            button3.Location = new Point(849, 71);
-            button3.Name = "button3";
-            button3.Size = new Size(104, 38);
-            button3.TabIndex = 4;
-            button3.Text = "Удалить";
-            button3.UseVisualStyleBackColor = true;
+            delete_button.Location = new Point(849, 71);
+            delete_button.Name = "delete_button";
+            delete_button.Size = new Size(104, 38);
+            delete_button.TabIndex = 4;
+            delete_button.Text = "Удалить";
+            delete_button.UseVisualStyleBackColor = true;
+            delete_button.Click += delete_button_Click;
             // 
-            // button4
+            // export_button
             // 
-            button4.Location = new Point(849, 115);
-            button4.Name = "button4";
-            button4.Size = new Size(104, 38);
-            button4.TabIndex = 5;
-            button4.Text = "Экспорт";
-            button4.UseVisualStyleBackColor = true;
+            export_button.Location = new Point(849, 115);
+            export_button.Name = "export_button";
+            export_button.Size = new Size(104, 38);
+            export_button.TabIndex = 5;
+            export_button.Text = "Экспорт";
+            export_button.UseVisualStyleBackColor = true;
+            export_button.Click += export_button_Click;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(965, 539);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button1);
+            Controls.Add(export_button);
+            Controls.Add(delete_button);
+            Controls.Add(add_button);
             Controls.Add(dataGridView1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainForm";
+            Text = "Реестр";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -142,8 +145,9 @@
         private ToolStripMenuItem животныеToolStripMenuItem;
         private ToolStripMenuItem организацииToolStripMenuItem;
         private ToolStripMenuItem контрактыToolStripMenuItem;
-        private Button button1;
-        private Button button3;
-        private Button button4;
+        private Button add_button;
+        private Button delete_button;
+        private Button export_button;
+        private SaveFileDialog saveFileDialog1;
     }
 }
