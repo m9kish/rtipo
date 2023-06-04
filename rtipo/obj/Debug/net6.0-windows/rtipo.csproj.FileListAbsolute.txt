@@ -1,0 +1,17 @@
+C:\Users\tvo20\source\repos\rtipo\rtipo\bin\Debug\net6.0-windows\rtipo.exe
+C:\Users\tvo20\source\repos\rtipo\rtipo\bin\Debug\net6.0-windows\rtipo.deps.json
+C:\Users\tvo20\source\repos\rtipo\rtipo\bin\Debug\net6.0-windows\rtipo.runtimeconfig.json
+C:\Users\tvo20\source\repos\rtipo\rtipo\bin\Debug\net6.0-windows\rtipo.dll
+C:\Users\tvo20\source\repos\rtipo\rtipo\bin\Debug\net6.0-windows\rtipo.pdb
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.csproj.AssemblyReference.cache
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.Form1.resources
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.csproj.GenerateResource.cache
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.AssemblyInfoInputs.cache
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.AssemblyInfo.cs
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.csproj.CoreCompileInputs.cache
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.dll
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\refint\rtipo.dll
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.pdb
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.genruntimeconfig.cache
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\ref\rtipo.dll

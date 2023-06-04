@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33717.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rtipo", "rtipo\rtipo.csproj", "{811F02F3-886C-45F3-8E9D-8E02FFF06968}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{811F02F3-886C-45F3-8E9D-8E02FFF06968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{811F02F3-886C-45F3-8E9D-8E02FFF06968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{811F02F3-886C-45F3-8E9D-8E02FFF06968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{811F02F3-886C-45F3-8E9D-8E02FFF06968}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB215F7F-FDAE-4547-BDBE-4AC2FE4E55D9}
+	EndGlobalSection
+EndGlobal
