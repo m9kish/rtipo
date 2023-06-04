@@ -12,10 +12,11 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\tvo20\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\tvo20\\.nuget\\packages"
+      "C:\\Users\\speco\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\speco\\.nuget\\packages"
     ],
     "configProperties": {
+      "System.Reflection.NullabilityInfoContext.IsSupported": true,
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
     }
   }
