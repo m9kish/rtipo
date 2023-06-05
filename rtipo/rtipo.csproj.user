@@ -16,9 +16,6 @@
     <Compile Update="OrganisationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="StartMenuForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="StatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>

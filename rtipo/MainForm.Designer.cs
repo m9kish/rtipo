@@ -28,64 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            menuStrip1 = new MenuStrip();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            животныеToolStripMenuItem = new ToolStripMenuItem();
-            организацииToolStripMenuItem = new ToolStripMenuItem();
-            контрактыToolStripMenuItem = new ToolStripMenuItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            dataGridView = new DataGridView();
             add_button = new Button();
             delete_button = new Button();
             export_button = new Button();
             saveFileDialog1 = new SaveFileDialog();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            menuStrip1.SuspendLayout();
+            toolStrip1 = new ToolStrip();
+            animals_fill_button = new ToolStripButton();
+            organisations_fill_button = new ToolStripButton();
+            contracts_fill_button = new ToolStripButton();
+            to_statistics_button = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
+            toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 27);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(831, 500);
-            dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1 });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(965, 24);
-            menuStrip1.TabIndex = 1;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { животныеToolStripMenuItem, организацииToolStripMenuItem, контрактыToolStripMenuItem });
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(65, 20);
-            toolStripMenuItem1.Text = "Реестры";
-            toolStripMenuItem1.Click += toolStripMenuItem1_Click;
-            // 
-            // животныеToolStripMenuItem
-            // 
-            животныеToolStripMenuItem.Name = "животныеToolStripMenuItem";
-            животныеToolStripMenuItem.Size = new Size(147, 22);
-            животныеToolStripMenuItem.Text = "Животные";
-            // 
-            // организацииToolStripMenuItem
-            // 
-            организацииToolStripMenuItem.Name = "организацииToolStripMenuItem";
-            организацииToolStripMenuItem.Size = new Size(147, 22);
-            организацииToolStripMenuItem.Text = "Организации";
-            // 
-            // контрактыToolStripMenuItem
-            // 
-            контрактыToolStripMenuItem.Name = "контрактыToolStripMenuItem";
-            контрактыToolStripMenuItem.Size = new Size(147, 22);
-            контрактыToolStripMenuItem.Text = "Контракты";
+            dataGridView.AllowUserToAddRows = false;
+            dataGridView.AllowUserToDeleteRows = false;
+            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.Location = new Point(12, 27);
+            dataGridView.Name = "dataGridView";
+            dataGridView.ReadOnly = true;
+            dataGridView.RowTemplate.Height = 25;
+            dataGridView.Size = new Size(831, 500);
+            dataGridView.TabIndex = 0;
+            dataGridView.CellContentClick += dataGridView1_CellContentClick;
             // 
             // add_button
             // 
@@ -117,37 +86,87 @@
             export_button.UseVisualStyleBackColor = true;
             export_button.Click += export_button_Click;
             // 
+            // toolStrip1
+            // 
+            toolStrip1.Items.AddRange(new ToolStripItem[] { animals_fill_button, organisations_fill_button, contracts_fill_button });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(965, 25);
+            toolStrip1.TabIndex = 6;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // animals_fill_button
+            // 
+            animals_fill_button.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            animals_fill_button.Image = (Image)resources.GetObject("animals_fill_button.Image");
+            animals_fill_button.ImageTransparentColor = Color.Magenta;
+            animals_fill_button.Name = "animals_fill_button";
+            animals_fill_button.Size = new Size(69, 22);
+            animals_fill_button.Text = "Животные";
+            animals_fill_button.Click += animals_fill_button_Click;
+            // 
+            // organisations_fill_button
+            // 
+            organisations_fill_button.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            organisations_fill_button.Image = (Image)resources.GetObject("organisations_fill_button.Image");
+            organisations_fill_button.ImageTransparentColor = Color.Magenta;
+            organisations_fill_button.Name = "organisations_fill_button";
+            organisations_fill_button.Size = new Size(84, 22);
+            organisations_fill_button.Text = "Организации";
+            organisations_fill_button.Click += organisations_fill_button_Click;
+            // 
+            // contracts_fill_button
+            // 
+            contracts_fill_button.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            contracts_fill_button.Image = (Image)resources.GetObject("contracts_fill_button.Image");
+            contracts_fill_button.ImageTransparentColor = Color.Magenta;
+            contracts_fill_button.Name = "contracts_fill_button";
+            contracts_fill_button.Size = new Size(70, 22);
+            contracts_fill_button.Text = "Контракты";
+            contracts_fill_button.Click += contracts_fill_button_Click;
+            // 
+            // to_statistics_button
+            // 
+            to_statistics_button.Location = new Point(849, 489);
+            to_statistics_button.Name = "to_statistics_button";
+            to_statistics_button.Size = new Size(104, 38);
+            to_statistics_button.TabIndex = 7;
+            to_statistics_button.Text = "Статистика";
+            to_statistics_button.UseVisualStyleBackColor = true;
+            to_statistics_button.Click += to_statistics_button_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(965, 539);
+            Controls.Add(to_statistics_button);
+            Controls.Add(toolStrip1);
             Controls.Add(export_button);
             Controls.Add(delete_button);
             Controls.Add(add_button);
-            Controls.Add(dataGridView1);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            Controls.Add(dataGridView);
             Name = "MainForm";
             Text = "Реестр";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            FormClosed += MainForm_FormClosed;
+            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem животныеToolStripMenuItem;
-        private ToolStripMenuItem организацииToolStripMenuItem;
-        private ToolStripMenuItem контрактыToolStripMenuItem;
+        private DataGridView dataGridView;
         private Button add_button;
         private Button delete_button;
         private Button export_button;
         private SaveFileDialog saveFileDialog1;
+        private ToolStrip toolStrip1;
+        private ToolStripButton animals_fill_button;
+        private ToolStripButton organisations_fill_button;
+        private ToolStripButton contracts_fill_button;
+        private Button to_statistics_button;
     }
 }

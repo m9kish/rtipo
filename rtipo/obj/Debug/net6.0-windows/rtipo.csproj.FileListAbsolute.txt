@@ -82,6 +82,5 @@ C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.AuthForm.
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.ContractForm.resources
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.MainForm.resources
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.OrganisationForm.resources
-C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.StartMenuForm.resources
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.StatisticsForm.resources
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.csproj.CopyComplete

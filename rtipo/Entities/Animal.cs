@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using MySqlConnector;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace rtipo.Entities
 {
@@ -19,5 +23,26 @@ namespace rtipo.Entities
         public string Special_signs { get; set; }
         public Category Category { get; set; }
         public OwnerSign OwnerSigns { get; set; }
+
+        public DataTable FillTable()
+        {
+            DB db = new DB();
+
+            DataTable table = new DataTable();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand command = new MySqlCommand("SELECT Animals.Id, Registration_number, Birthday, ChipNumber, Nickname, Sex, Photos, Special_signs, " +
+                "OwnerSigns.Title, Categories.Title, Localities.Title FROM `Animals` " +
+                "INNER JOIN `OwnerSigns` ON OwnerSigns.Id = Animals.OwnerSignsId " +
+                "INNER JOIN `Localities` ON Localities.Id = Animals.LocalityId " +
+                "INNER JOIN `Categories` ON Categories.Id = Animals.CategoryId", db.getConnection());
+
+
+            adapter.SelectCommand = command;
+            adapter.Fill(table);
+
+            return table;   
+        }
     }
 }
