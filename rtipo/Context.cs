@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace rtipo
 {
-    internal class Context : DbContext
+    public class Context : DbContext
     {
         public Context()
         {
@@ -26,16 +26,18 @@ namespace rtipo
             );
         }
 
-        DbSet<Animal> Animals { get; set; }
-        DbSet<Category> Categories { get; set; }
-        DbSet<Inspection> Inspections { get; set; }
-        DbSet<Locality> Localities { get; set; }
-        DbSet<MunicipalContract> MunicipalContracts { get; set; }
-        DbSet<Organisation> Organisations { get; set; }
-        DbSet<OrganisationType> OrganisationTypes { get; set; }
-        DbSet<OwnerSign> OwnerSigns { get; set; }
-        DbSet<User> Users { get; set; }
-        DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Animal> Animals { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Inspection> Inspections { get; set; }
+        public DbSet<Locality> Localities { get; set; }
+        public DbSet<MunicipalContract> MunicipalContracts { get; set; }
+        public DbSet<Organisation> Organisations { get; set; }
+        public DbSet<OrganisationType> OrganisationTypes { get; set; }
+        public DbSet<OwnerSign> OwnerSigns { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+
+
 
     }
 }

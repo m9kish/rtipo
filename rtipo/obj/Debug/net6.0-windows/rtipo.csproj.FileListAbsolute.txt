@@ -84,3 +84,6 @@ C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.MainForm.
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.OrganisationForm.resources
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.StatisticsForm.resources
 C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.csproj.CopyComplete
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Core.dll
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\rtipo.csproj.ResolveComReference.cache
+C:\Users\tvo20\source\repos\rtipo\rtipo\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll

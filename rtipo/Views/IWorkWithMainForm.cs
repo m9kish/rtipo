@@ -10,5 +10,7 @@ namespace rtipo.Views
     public interface IWorkWithMainForm
     {
         DataTable DataTable { get; set; }
+
+        int Id { get; set; } 
     }
 }

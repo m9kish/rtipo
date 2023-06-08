@@ -30,33 +30,34 @@
         {
             label1 = new Label();
             label2 = new Label();
-            textBox2 = new TextBox();
-            textBox4 = new TextBox();
+            regnum_textBox = new TextBox();
+            chipnum_textBox = new TextBox();
             label3 = new Label();
             label4 = new Label();
-            textBox6 = new TextBox();
+            signs_textBox = new TextBox();
             label6 = new Label();
-            textBox8 = new TextBox();
+            nickname_textBox = new TextBox();
             label7 = new Label();
             label8 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            pictureBox1 = new PictureBox();
-            dataGridView1 = new DataGridView();
+            birthday_dateTimePicker = new DateTimePicker();
+            pictureBox = new PictureBox();
+            dataGridView = new DataGridView();
             label5 = new Label();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            button6 = new Button();
-            comboBox3 = new ComboBox();
+            location_comboBox = new ComboBox();
+            sex_comboBox = new ComboBox();
+            editAnimal_button = new Button();
+            owner_comboBox = new ComboBox();
             label9 = new Label();
-            comboBox4 = new ComboBox();
+            category_comboBox = new ComboBox();
             label10 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            updateGrid_button = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -77,19 +78,19 @@
             label2.TabIndex = 1;
             label2.Text = "Регистрационный номер";
             // 
-            // textBox2
+            // regnum_textBox
             // 
-            textBox2.Location = new Point(12, 70);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 3;
+            regnum_textBox.Location = new Point(12, 70);
+            regnum_textBox.Name = "regnum_textBox";
+            regnum_textBox.Size = new Size(100, 23);
+            regnum_textBox.TabIndex = 3;
             // 
-            // textBox4
+            // chipnum_textBox
             // 
-            textBox4.Location = new Point(12, 128);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 6;
+            chipnum_textBox.Location = new Point(12, 128);
+            chipnum_textBox.Name = "chipnum_textBox";
+            chipnum_textBox.Size = new Size(100, 23);
+            chipnum_textBox.TabIndex = 6;
             // 
             // label3
             // 
@@ -109,12 +110,12 @@
             label4.TabIndex = 4;
             label4.Text = "Номер чипа";
             // 
-            // textBox6
+            // signs_textBox
             // 
-            textBox6.Location = new Point(12, 215);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 14;
+            signs_textBox.Location = new Point(12, 215);
+            signs_textBox.Name = "signs_textBox";
+            signs_textBox.Size = new Size(100, 23);
+            signs_textBox.TabIndex = 14;
             // 
             // label6
             // 
@@ -125,12 +126,12 @@
             label6.TabIndex = 12;
             label6.Text = "Отличительные знаки";
             // 
-            // textBox8
+            // nickname_textBox
             // 
-            textBox8.Location = new Point(12, 157);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 10;
+            nickname_textBox.Location = new Point(12, 157);
+            nickname_textBox.Name = "nickname_textBox";
+            nickname_textBox.Size = new Size(100, 23);
+            nickname_textBox.TabIndex = 10;
             // 
             // label7
             // 
@@ -150,34 +151,38 @@
             label8.TabIndex = 8;
             label8.Text = "Кличка";
             // 
-            // dateTimePicker1
+            // birthday_dateTimePicker
             // 
-            dateTimePicker1.Location = new Point(12, 99);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(141, 23);
-            dateTimePicker1.TabIndex = 16;
+            birthday_dateTimePicker.Location = new Point(12, 99);
+            birthday_dateTimePicker.Name = "birthday_dateTimePicker";
+            birthday_dateTimePicker.Size = new Size(141, 23);
+            birthday_dateTimePicker.TabIndex = 16;
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            pictureBox1.Location = new Point(270, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(309, 250);
-            pictureBox1.TabIndex = 17;
-            pictureBox1.TabStop = false;
+            pictureBox.Location = new Point(428, 11);
+            pictureBox.Name = "pictureBox";
+            pictureBox.Size = new Size(300, 300);
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox.TabIndex = 17;
+            pictureBox.TabStop = false;
             // 
-            // dataGridView1
+            // dataGridView
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 296);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(567, 150);
-            dataGridView1.TabIndex = 18;
+            dataGridView.AllowUserToAddRows = false;
+            dataGridView.AllowUserToDeleteRows = false;
+            dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.Location = new Point(12, 317);
+            dataGridView.Name = "dataGridView";
+            dataGridView.ReadOnly = true;
+            dataGridView.RowTemplate.Height = 25;
+            dataGridView.Size = new Size(764, 342);
+            dataGridView.TabIndex = 18;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 278);
+            label5.Location = new Point(12, 296);
             label5.Name = "label5";
             label5.Size = new Size(59, 15);
             label5.TabIndex = 19;
@@ -185,7 +190,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(585, 11);
+            button1.Location = new Point(782, 11);
             button1.Name = "button1";
             button1.Size = new Size(79, 39);
             button1.TabIndex = 20;
@@ -194,7 +199,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(585, 56);
+            button2.Location = new Point(782, 56);
             button2.Name = "button2";
             button2.Size = new Size(79, 39);
             button2.TabIndex = 21;
@@ -203,7 +208,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(585, 296);
+            button3.Location = new Point(782, 296);
             button3.Name = "button3";
             button3.Size = new Size(79, 39);
             button3.TabIndex = 22;
@@ -212,7 +217,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(585, 341);
+            button4.Location = new Point(782, 341);
             button4.Name = "button4";
             button4.Size = new Size(79, 39);
             button4.TabIndex = 23;
@@ -222,45 +227,50 @@
             // button5
             // 
             button5.BackColor = SystemColors.Info;
-            button5.Location = new Point(585, 407);
+            button5.Location = new Point(782, 620);
             button5.Name = "button5";
             button5.Size = new Size(79, 39);
             button5.TabIndex = 24;
             button5.Text = "Сохранить";
             button5.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // location_comboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(12, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(100, 23);
-            comboBox1.TabIndex = 25;
+            location_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            location_comboBox.FormattingEnabled = true;
+            location_comboBox.Location = new Point(12, 12);
+            location_comboBox.Name = "location_comboBox";
+            location_comboBox.Size = new Size(100, 23);
+            location_comboBox.TabIndex = 25;
             // 
-            // comboBox2
+            // sex_comboBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(12, 186);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(100, 23);
-            comboBox2.TabIndex = 26;
+            sex_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            sex_comboBox.FormattingEnabled = true;
+            sex_comboBox.Items.AddRange(new object[] { "Мужской", "Женский", "Неизвестно" });
+            sex_comboBox.Location = new Point(12, 186);
+            sex_comboBox.Name = "sex_comboBox";
+            sex_comboBox.Size = new Size(100, 23);
+            sex_comboBox.TabIndex = 26;
             // 
-            // button6
+            // editAnimal_button
             // 
-            button6.Location = new Point(585, 223);
-            button6.Name = "button6";
-            button6.Size = new Size(79, 39);
-            button6.TabIndex = 27;
-            button6.Text = "Изменить карточку";
-            button6.UseVisualStyleBackColor = true;
+            editAnimal_button.Location = new Point(782, 223);
+            editAnimal_button.Name = "editAnimal_button";
+            editAnimal_button.Size = new Size(79, 39);
+            editAnimal_button.TabIndex = 27;
+            editAnimal_button.Text = "Изменить карточку";
+            editAnimal_button.UseVisualStyleBackColor = true;
+            editAnimal_button.Click += editAnimal_button_Click;
             // 
-            // comboBox3
+            // owner_comboBox
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(12, 244);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(100, 23);
-            comboBox3.TabIndex = 28;
+            owner_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            owner_comboBox.FormattingEnabled = true;
+            owner_comboBox.Location = new Point(12, 244);
+            owner_comboBox.Name = "owner_comboBox";
+            owner_comboBox.Size = new Size(100, 23);
+            owner_comboBox.TabIndex = 28;
             // 
             // label9
             // 
@@ -271,13 +281,14 @@
             label9.TabIndex = 29;
             label9.Text = "Признаки владельца";
             // 
-            // comboBox4
+            // category_comboBox
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new Point(12, 41);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(100, 23);
-            comboBox4.TabIndex = 30;
+            category_comboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            category_comboBox.FormattingEnabled = true;
+            category_comboBox.Location = new Point(12, 41);
+            category_comboBox.Name = "category_comboBox";
+            category_comboBox.Size = new Size(100, 23);
+            category_comboBox.TabIndex = 30;
             // 
             // label10
             // 
@@ -288,42 +299,53 @@
             label10.TabIndex = 31;
             label10.Text = "Категория";
             // 
+            // updateGrid_button
+            // 
+            updateGrid_button.Location = new Point(782, 450);
+            updateGrid_button.Name = "updateGrid_button";
+            updateGrid_button.Size = new Size(79, 39);
+            updateGrid_button.TabIndex = 32;
+            updateGrid_button.Text = "Обновить";
+            updateGrid_button.UseVisualStyleBackColor = true;
+            // 
             // AnimalForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(672, 458);
+            ClientSize = new Size(873, 671);
+            Controls.Add(updateGrid_button);
             Controls.Add(label10);
-            Controls.Add(comboBox4);
+            Controls.Add(category_comboBox);
             Controls.Add(label9);
-            Controls.Add(comboBox3);
-            Controls.Add(button6);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(owner_comboBox);
+            Controls.Add(editAnimal_button);
+            Controls.Add(sex_comboBox);
+            Controls.Add(location_comboBox);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label5);
-            Controls.Add(dataGridView1);
-            Controls.Add(pictureBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox6);
+            Controls.Add(dataGridView);
+            Controls.Add(pictureBox);
+            Controls.Add(birthday_dateTimePicker);
+            Controls.Add(signs_textBox);
             Controls.Add(label6);
-            Controls.Add(textBox8);
+            Controls.Add(nickname_textBox);
             Controls.Add(label7);
             Controls.Add(label8);
-            Controls.Add(textBox4);
+            Controls.Add(chipnum_textBox);
             Controls.Add(label3);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(regnum_textBox);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "AnimalForm";
             Text = "Животное";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += AnimalForm_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -332,30 +354,31 @@
 
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
-        private TextBox textBox4;
+        private TextBox regnum_textBox;
+        private TextBox chipnum_textBox;
         private Label label3;
         private Label label4;
-        private TextBox textBox6;
+        private TextBox signs_textBox;
         private Label label6;
-        private TextBox textBox8;
+        private TextBox nickname_textBox;
         private Label label7;
         private Label label8;
-        private DateTimePicker dateTimePicker1;
-        private PictureBox pictureBox1;
-        private DataGridView dataGridView1;
+        private DateTimePicker birthday_dateTimePicker;
+        private PictureBox pictureBox;
+        private DataGridView dataGridView;
         private Label label5;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
         private Button button5;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Button button6;
-        private ComboBox comboBox3;
+        private ComboBox location_comboBox;
+        private ComboBox sex_comboBox;
+        private Button editAnimal_button;
+        private ComboBox owner_comboBox;
         private Label label9;
-        private ComboBox comboBox4;
+        private ComboBox category_comboBox;
         private Label label10;
+        private Button updateGrid_button;
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace rtipo.Entities
 {
-    internal class MunicipalContract
+    public class MunicipalContract
     {
         public int Id { get; set; }
         public Organisation OrganisationOrderId { get; set; }
@@ -19,21 +19,11 @@ namespace rtipo.Entities
 
         public DataTable FillTable()
         {
-            DB db = new DB();
-
-            DataTable table = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `MunicipalContracts`", db.getConnection());
-            // Выдает ошибку MySqlConnector.MySqlException: "Not unique table/alias: 'Organisations'"  хз как пофиксить пока что
-            /*MySqlCommand command = new MySqlCommand("SELECT MunicipalContracts.Id, Agreenent_date, Validaity_date, Contract_number, " +
-                "Organisations.Full_title, Organisations.Full_title FROM `MunicipalContracts` " +
-                "INNER JOIN `Organisations` ON Organisations.Id = MunicipalContracts.OrganisationOrderIdId " +
-                "INNER JOIN `Organisations` ON Organisations.Id = MunicipalContracts.OrganisationExecutorIdId", db.getConnection());*/
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
+            DataTable table = new();
+            table = new DB().DataTable("SELECT MunicipalContracts.Id, a.Full_title, b.Full_title, Agreenent_date, Validaity_date, Contract_number " +
+                "FROM `MunicipalContracts` " +
+                "INNER JOIN Organisations a ON a.Id = MunicipalContracts.OrganisationOrderIdId " +
+                "INNER JOIN Organisations b ON b.Id = MunicipalContracts.OrganisationExecutorIdId");
 
             return table;
         }

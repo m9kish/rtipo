@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace rtipo.Entities
 {
-    internal class User
+    public class User
     {
         public int Id { get; set; }
         public UserRole UserRole { get; set; }

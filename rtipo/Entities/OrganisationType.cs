@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace rtipo.Entities
 {
-    internal class OrganisationType
+    public class OrganisationType
     {
         public int Id { get; set; }
         public string Title { get; set; }

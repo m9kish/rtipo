@@ -10,7 +10,7 @@ using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace rtipo.Entities
 {
-    internal class Animal
+    public class Animal
     {
         public int Id { get; set; }
         public Locality Locality { get; set; }
@@ -26,21 +26,12 @@ namespace rtipo.Entities
 
         public DataTable FillTable()
         {
-            DB db = new DB();
-
-            DataTable table = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("SELECT Animals.Id, Registration_number, Birthday, ChipNumber, Nickname, Sex, Photos, Special_signs, " +
+            DataTable table = new();
+            table = new DB().DataTable("SELECT Animals.Id, Registration_number, Birthday, ChipNumber, Nickname, Sex, Photos, Special_signs, " +
                 "OwnerSigns.Title, Categories.Title, Localities.Title FROM `Animals` " +
                 "INNER JOIN `OwnerSigns` ON OwnerSigns.Id = Animals.OwnerSignsId " +
                 "INNER JOIN `Localities` ON Localities.Id = Animals.LocalityId " +
-                "INNER JOIN `Categories` ON Categories.Id = Animals.CategoryId", db.getConnection());
-
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
+                "INNER JOIN `Categories` ON Categories.Id = Animals.CategoryId");
 
             return table;   
         }

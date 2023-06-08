@@ -28,59 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            dateTimePicker1 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            textBox1 = new TextBox();
+            order_comboBox = new ComboBox();
+            executor_comboBox = new ComboBox();
+            first_dateTimePicker = new DateTimePicker();
+            last_dateTimePicker = new DateTimePicker();
+            num_textBox = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            button1 = new Button();
+            editContract_button = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
             SuspendLayout();
             // 
-            // comboBox1
+            // order_comboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(12, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(141, 23);
-            comboBox1.TabIndex = 0;
+            order_comboBox.FormattingEnabled = true;
+            order_comboBox.Location = new Point(12, 12);
+            order_comboBox.Name = "order_comboBox";
+            order_comboBox.Size = new Size(141, 23);
+            order_comboBox.TabIndex = 0;
             // 
-            // comboBox2
+            // executor_comboBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(12, 41);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(141, 23);
-            comboBox2.TabIndex = 1;
+            executor_comboBox.FormattingEnabled = true;
+            executor_comboBox.Location = new Point(12, 41);
+            executor_comboBox.Name = "executor_comboBox";
+            executor_comboBox.Size = new Size(141, 23);
+            executor_comboBox.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // first_dateTimePicker
             // 
-            dateTimePicker1.Location = new Point(12, 70);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(141, 23);
-            dateTimePicker1.TabIndex = 2;
+            first_dateTimePicker.Location = new Point(12, 70);
+            first_dateTimePicker.Name = "first_dateTimePicker";
+            first_dateTimePicker.Size = new Size(141, 23);
+            first_dateTimePicker.TabIndex = 2;
             // 
-            // dateTimePicker2
+            // last_dateTimePicker
             // 
-            dateTimePicker2.Location = new Point(12, 99);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(141, 23);
-            dateTimePicker2.TabIndex = 3;
+            last_dateTimePicker.Location = new Point(12, 99);
+            last_dateTimePicker.Name = "last_dateTimePicker";
+            last_dateTimePicker.Size = new Size(141, 23);
+            last_dateTimePicker.TabIndex = 3;
             // 
-            // textBox1
+            // num_textBox
             // 
-            textBox1.Location = new Point(12, 128);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(141, 23);
-            textBox1.TabIndex = 4;
+            num_textBox.Location = new Point(12, 128);
+            num_textBox.Name = "num_textBox";
+            num_textBox.Size = new Size(141, 23);
+            num_textBox.TabIndex = 4;
             // 
             // label1
             // 
@@ -127,14 +127,15 @@
             label5.TabIndex = 9;
             label5.Text = "Номер контракта";
             // 
-            // button1
+            // editContract_button
             // 
-            button1.Location = new Point(279, 12);
-            button1.Name = "button1";
-            button1.Size = new Size(91, 47);
-            button1.TabIndex = 10;
-            button1.Text = "Изменить карточку";
-            button1.UseVisualStyleBackColor = true;
+            editContract_button.Location = new Point(279, 12);
+            editContract_button.Name = "editContract_button";
+            editContract_button.Size = new Size(91, 47);
+            editContract_button.TabIndex = 10;
+            editContract_button.Text = "Изменить карточку";
+            editContract_button.UseVisualStyleBackColor = true;
+            editContract_button.Click += editContract_button_Click;
             // 
             // button2
             // 
@@ -182,36 +183,37 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(editContract_button);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox1);
-            Controls.Add(dateTimePicker2);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(num_textBox);
+            Controls.Add(last_dateTimePicker);
+            Controls.Add(first_dateTimePicker);
+            Controls.Add(executor_comboBox);
+            Controls.Add(order_comboBox);
             Name = "ContractForm";
             Text = "Контракт";
+            Load += ContractForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private DateTimePicker dateTimePicker1;
-        private DateTimePicker dateTimePicker2;
-        private TextBox textBox1;
+        private ComboBox order_comboBox;
+        private ComboBox executor_comboBox;
+        private DateTimePicker first_dateTimePicker;
+        private DateTimePicker last_dateTimePicker;
+        private TextBox num_textBox;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button1;
+        private Button editContract_button;
         private Button button2;
         private Button button3;
         private Button button4;

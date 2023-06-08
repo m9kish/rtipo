@@ -23,7 +23,7 @@ namespace rtipo.Presenters
             user.Login = userView.LoginText;
             user.Password = userView.PasswordText;
 
-            return user.Auth(login, password);
+            return user.Auth(user.Login, user.Password);
         }
 
     }

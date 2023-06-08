@@ -15,11 +15,12 @@ namespace rtipo
 {
     public partial class AuthForm : Form, IUser
     {
-        private MainForm mainForm;
+        public MainForm mainForm;
         public AuthForm()
         {
             InitializeComponent();
-            mainForm = new MainForm(this) { Visible = false };
+            //mainForm = new MainForm(this) { Visible = false };
+            mainForm = new MainForm();
         }
 
         public string LoginText { get => textBox_login.Text; set => textBox_login.Text = value; }
@@ -37,8 +38,10 @@ namespace rtipo
 
             if (result)
             {
-                this.Visible = false;
-                mainForm.Visible = true;
+                /*this.Visible = false;
+                mainForm.Visible = true;*/
+                mainForm.Show();
+                this.Hide();
             }
 
             else

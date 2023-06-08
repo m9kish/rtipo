@@ -28,67 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            type_comboBox = new ComboBox();
+            location_comboBox = new ComboBox();
+            title_textBox = new TextBox();
+            inn_textBox = new TextBox();
+            kpp_textBox = new TextBox();
+            adres_textBox = new TextBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            button1 = new Button();
+            editOrg_button = new Button();
             button2 = new Button();
+            ip_comboBox = new ComboBox();
+            label7 = new Label();
             SuspendLayout();
             // 
-            // comboBox1
+            // type_comboBox
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(12, 12);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 0;
+            type_comboBox.FormattingEnabled = true;
+            type_comboBox.Location = new Point(12, 12);
+            type_comboBox.Name = "type_comboBox";
+            type_comboBox.Size = new Size(121, 23);
+            type_comboBox.TabIndex = 0;
             // 
-            // comboBox2
+            // location_comboBox
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(12, 41);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 1;
+            location_comboBox.FormattingEnabled = true;
+            location_comboBox.Location = new Point(12, 41);
+            location_comboBox.Name = "location_comboBox";
+            location_comboBox.Size = new Size(121, 23);
+            location_comboBox.TabIndex = 1;
             // 
-            // textBox1
+            // title_textBox
             // 
-            textBox1.Location = new Point(12, 70);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(121, 23);
-            textBox1.TabIndex = 2;
+            title_textBox.Location = new Point(12, 70);
+            title_textBox.Name = "title_textBox";
+            title_textBox.Size = new Size(121, 23);
+            title_textBox.TabIndex = 2;
             // 
-            // textBox2
+            // inn_textBox
             // 
-            textBox2.Location = new Point(12, 99);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(121, 23);
-            textBox2.TabIndex = 3;
+            inn_textBox.Location = new Point(12, 99);
+            inn_textBox.Name = "inn_textBox";
+            inn_textBox.Size = new Size(121, 23);
+            inn_textBox.TabIndex = 3;
             // 
-            // textBox3
+            // kpp_textBox
             // 
-            textBox3.Location = new Point(12, 128);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(121, 23);
-            textBox3.TabIndex = 4;
+            kpp_textBox.Location = new Point(12, 128);
+            kpp_textBox.Name = "kpp_textBox";
+            kpp_textBox.Size = new Size(121, 23);
+            kpp_textBox.TabIndex = 4;
             // 
-            // textBox4
+            // adres_textBox
             // 
-            textBox4.Location = new Point(12, 157);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(121, 23);
-            textBox4.TabIndex = 5;
+            adres_textBox.Location = new Point(12, 157);
+            adres_textBox.Name = "adres_textBox";
+            adres_textBox.Size = new Size(121, 23);
+            adres_textBox.TabIndex = 5;
             // 
             // label1
             // 
@@ -144,36 +144,15 @@
             label6.TabIndex = 12;
             label6.Text = "Адрес регистрации";
             // 
-            // radioButton1
+            // editOrg_button
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(12, 186);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(133, 19);
-            radioButton1.TabIndex = 15;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Юридическое лицо";
-            radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(151, 186);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(43, 19);
-            radioButton2.TabIndex = 16;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "ИП";
-            radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(256, 11);
-            button1.Name = "button1";
-            button1.Size = new Size(89, 48);
-            button1.TabIndex = 17;
-            button1.Text = "Изменить карточку";
-            button1.UseVisualStyleBackColor = true;
+            editOrg_button.Location = new Point(256, 11);
+            editOrg_button.Name = "editOrg_button";
+            editOrg_button.Size = new Size(89, 48);
+            editOrg_button.TabIndex = 17;
+            editOrg_button.Text = "Изменить карточку";
+            editOrg_button.UseVisualStyleBackColor = true;
+            editOrg_button.Click += editOrg_button_Click;
             // 
             // button2
             // 
@@ -185,50 +164,69 @@
             button2.Text = "Сохранить";
             button2.UseVisualStyleBackColor = false;
             // 
+            // ip_comboBox
+            // 
+            ip_comboBox.FormattingEnabled = true;
+            ip_comboBox.Items.AddRange(new object[] { "True", "False" });
+            ip_comboBox.Location = new Point(12, 187);
+            ip_comboBox.Name = "ip_comboBox";
+            ip_comboBox.Size = new Size(121, 23);
+            ip_comboBox.TabIndex = 19;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(139, 190);
+            label7.Name = "label7";
+            label7.Size = new Size(25, 15);
+            label7.TabIndex = 20;
+            label7.Text = "ИП";
+            // 
             // OrganisationForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(356, 222);
+            Controls.Add(label7);
+            Controls.Add(ip_comboBox);
             Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
+            Controls.Add(editOrg_button);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(adres_textBox);
+            Controls.Add(kpp_textBox);
+            Controls.Add(inn_textBox);
+            Controls.Add(title_textBox);
+            Controls.Add(location_comboBox);
+            Controls.Add(type_comboBox);
             Name = "OrganisationForm";
             Text = "Организация";
+            Load += OrganisationForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private ComboBox type_comboBox;
+        private ComboBox location_comboBox;
+        private TextBox title_textBox;
+        private TextBox inn_textBox;
+        private TextBox kpp_textBox;
+        private TextBox adres_textBox;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
         private Label label6;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private Button button1;
+        private Button editOrg_button;
         private Button button2;
+        private ComboBox ip_comboBox;
+        private Label label7;
     }
 }

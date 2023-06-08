@@ -6,10 +6,12 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using rtipo.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace rtipo.Entities
 {
-    internal class Organisation
+    public class Organisation
     {
         public int Id { get; set; }
         public OrganisationType OrganisationType { get; set; }
@@ -28,19 +30,11 @@ namespace rtipo.Entities
 
         public DataTable FillTable()
         {
-            DB db = new DB();
-
-            DataTable table = new DataTable();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand command = new MySqlCommand("SELECT Organisations.Id, Full_title, INN, KPP, Registration_address, IsIndividual, " +
+            DataTable table = new();
+            table = new DB().DataTable("SELECT Organisations.Id, Full_title, INN, KPP, Registration_address, IsIndividual, " +
                 "OrganisationTypes.Title, Localities.Title FROM `Organisations` " +
                 "INNER JOIN `OrganisationTypes` ON OrganisationTypes.Id = Organisations.OrganisationTypeId " +
-                "INNER JOIN `Localities` ON Localities.Id = Organisations.LocalityId", db.getConnection());
-
-            adapter.SelectCommand = command;
-            adapter.Fill(table);
+                "INNER JOIN `Localities` ON Localities.Id = Organisations.LocalityId");
 
             return table;
         }

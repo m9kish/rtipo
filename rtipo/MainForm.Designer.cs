@@ -55,6 +55,7 @@
             dataGridView.Size = new Size(831, 500);
             dataGridView.TabIndex = 0;
             dataGridView.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView.CellDoubleClick += dataGridView_CellDoubleClick;
             // 
             // add_button
             // 
